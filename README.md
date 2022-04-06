@@ -4,4 +4,4 @@ We dont have a great day, we have to make it a great day.<br>
 Heroku web app link:- https://s2wb53sahini.herokuapp.com/
 <br>
 Class:  Rose <br>
-Attributes: Color (String), Breed_Variety (String), Price (Number)
+Attributes: Rose_Color (String), Breed_Variety (String), Rose_Price (Number)
