@@ -24,7 +24,12 @@ block content
 
   div(class= "container-fluid")
     div(class = "row")  
-      each item in results
-        div(class= "col-sm-2") #{item.Rose_Color}
-        div(class= "col-sm-2") #{item.Breed_Variety}
-        div(class= "col-sm-2") #{item.Rose_Price}
+      each item,index in results
+        div(class= "col-sm-2", onclick=`buy(${index})`) #{item.Rose_Color}
+        div(class= "col-sm-2", onclick=`buy(${index})`) #{item.Breed_Variety}
+        div(class= "col-sm-2", onclick=`buy(${index})`) #{item.Rose_Price}
+
+  script.
+    function buy(itemNum){
+      alert(`You purchased item ${itemNum+1}`)
+    }
